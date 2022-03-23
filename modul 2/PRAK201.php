@@ -8,11 +8,10 @@
 </head>
 <body>
         <?php
-        if(isset($_POST['submit'])){
-            $nama1=$_POST['nama1'];
-            $nama2=$_POST['nama2'];
-            $nama3=$_POST['nama3'];
-        }
+        error_reporting(0);
+        $nama1=$_POST['nama1'];
+        $nama2=$_POST['nama2'];
+        $nama3=$_POST['nama3'];
         ?>
     <form action="" method="post">
         Nama: 1 <input type="text" name="nama1"><br>

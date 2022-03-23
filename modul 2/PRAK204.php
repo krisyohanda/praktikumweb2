@@ -8,9 +8,8 @@
 </head>
 <body>
         <?php
-        if(isset($_POST['submit'])){
-            $nilai=$_POST['nilai'];
-        }
+        error_reporting(0);
+        $nilai=$_POST['nilai'];
         ?>
     <form action="" method="post">
         Nilai : <input type="number" name="nilai" value="<?php echo $nilai;?>"><br>
