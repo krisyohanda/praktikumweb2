@@ -11,11 +11,12 @@
 </head>
 <body>
 <?php
-error_reporting(0);
-$nama=$_POST['nama'];
-$nim=$_POST['nim'];
-$jenis_kelamin=$_POST['jenis_kelamin'];
-$namaErr = $nimErr = $jenis_kelaminErr = "";
+if(isset($_POST['submit'])){
+  $nama=$_POST['nama'];
+  $nim=$_POST['nim'];
+  $jenis_kelamin=$_POST['jenis_kelamin'];
+  $namaErr = $nimErr = $jenis_kelaminErr = "";
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["nama"])) {
