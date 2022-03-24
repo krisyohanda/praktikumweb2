@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
         echo "<h2>Hasil: Ratusan</h2>";
     }
     else{
-        echo "Anda Menginput Melebihi Limit Bilangan";
+        echo "<h2>Anda Menginput Melebihi Limit Bilangan</h2>";
     }
 }
 ?>
