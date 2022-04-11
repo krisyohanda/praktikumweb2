@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php
-    if(isset($_POST['Cetak'])){
+    if(isset($_POST['cetak'])){
         $batasBawah = $_POST['batasBawah'];
         $batasAtas = $_POST['batasAtas'];
     }
@@ -23,7 +23,7 @@
         <br>
         Batas Atas: <input type="number" name="batasAtas">
         <br>
-        <button type="submit" name="Cetak">Cetak</button>
+        <button type="submit" name="cetak">Cetak</button>
         <br>
         <br>
     </form>
@@ -32,7 +32,7 @@
 </html>
 
 <?php
-if(isset($_POST['Cetak'])){
+if(isset($_POST['cetak'])){
     $i = $batasBawah;
     do{
         if(($i+7)%5 == 0){

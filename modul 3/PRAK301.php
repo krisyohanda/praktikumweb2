@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-    if(isset($_POST["cetak"])){
+    if(isset($_POST['cetak'])){
         $jumlah = $_POST["jumlah"];
     }
     ?>
@@ -25,7 +25,7 @@
 </html>
 
 <?php
-    if(isset($_POST["cetak"])){
+    if(isset($_POST['cetak'])){
         $i = 1;
         while($i <= $jumlah){
             if($i % 2 != 0){

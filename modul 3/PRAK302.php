@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php
-    if(isset($_POST["Cetak"])){
+    if(isset($_POST['cetak'])){
         $tinggi = $_POST['tinggi'];
         $url = $_POST['url'];
     }
@@ -23,7 +23,7 @@
         <br>
         Alamat Gambar : <input type="url" name="url">
         <br>
-        <button type="submit" name="Cetak">Cetak</button>
+        <button type="submit" name="cetak">Cetak</button>
         <br>
         <br>
     </form>
@@ -31,7 +31,7 @@
 </html>
 
 <?php
-if(isset($_POST['Cetak'])){
+if(isset($_POST['cetak'])){
     if($tinggi>0){
         $i = 1;
         while($i <= $tinggi){
