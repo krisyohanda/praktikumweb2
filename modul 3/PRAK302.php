@@ -19,9 +19,9 @@
     }
     ?>
     <form action="" method="post">
-        Tinggi : <input type="number" name="tinggi">
+        Tinggi : <input type="number" name="tinggi" value="<?php echo $tinggi?>">
         <br>
-        Alamat Gambar : <input type="url" name="url">
+        Alamat Gambar : <input type="url" name="url" value="<?php echo $url?>">
         <br>
         <button type="submit" name="cetak">Cetak</button>
         <br>

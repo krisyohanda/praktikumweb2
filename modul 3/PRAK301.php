@@ -17,7 +17,7 @@
     }
     ?>
     <form action="" method="post">
-        Jumlah Peserta : <input type="number" name="jumlah">
+        Jumlah Peserta : <input type="number" name="jumlah" value="<?php echo $jumlah?>">
         <br>
         <button type="submit" name="cetak">Cetak</button>
     </form>

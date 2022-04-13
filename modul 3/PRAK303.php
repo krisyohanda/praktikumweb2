@@ -19,9 +19,9 @@
     }
     ?>
     <form action="" method="post">
-        Batas Bawah: <input type="number" name="batasBawah">
+        Batas Bawah: <input type="number" name="batasBawah" value="<?php echo $batasBawah?>">
         <br>
-        Batas Atas: <input type="number" name="batasAtas">
+        Batas Atas: <input type="number" name="batasAtas" value="<?php echo $batasAtas?>">
         <br>
         <button type="submit" name="cetak">Cetak</button>
         <br>
