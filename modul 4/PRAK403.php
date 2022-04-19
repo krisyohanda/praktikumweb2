@@ -19,7 +19,9 @@ $data = [
 ]
 ];
 for($i=0; $i<count($data); $i++){
-    $data[$i]['total_sks']=0;
+    //cara 1
+    $data[$i]['total_sks'] = isset($_POST['total_sks']) ? $_POST['total_sks'] : 0;
+    // $data[$i]['total_sks']=0; cara 2
     for($j=0; $j<count($data[$i]['matkul']); $j++){
         $data[$i]['total_sks']+=$data[$i]['matkul'][$j]['sks'];
     }
