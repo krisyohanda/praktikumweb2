@@ -16,12 +16,17 @@
     </style>
 </head>
 <body>
+    <?php
+    $panjang = isset($_POST['panjang']) ? $_POST['panjang'] : '';
+    $lebar = isset($_POST['lebar']) ? $_POST['lebar'] : '';
+    $str = isset($_POST['str']) ? $_POST['str'] : '';
+    ?>
     <form action="" method="post">
-        Panjang : <input type="string" name="panjang">
+        Panjang : <input type="string" name="panjang" value="<?php echo $panjang?>">
         <br>
-        Lebar : <input type="string" name="lebar">
+        Lebar : <input type="string" name="lebar" value="<?php echo $lebar?>">
         <br>
-        Nilai : <input type="string" name="str">
+        Nilai : <input type="string" name="str" value="<?php echo $str?>">
         <br>
         <button type="submit" name="submit">Cetak</button>
     </form>
@@ -29,9 +34,6 @@
         <br>
     <?php
     if(isset($_POST['submit'])){
-    $panjang = $_POST['panjang'];
-    $lebar = $_POST['lebar'];
-    $str = $_POST['str'];
     $hasil = explode(" ", $str);
     $loop=0;
     $length=$panjang*$lebar;
